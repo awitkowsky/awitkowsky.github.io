@@ -1,0 +1,9 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  align-content: center;
+  display: flex;
+}
