@@ -79,6 +79,11 @@ section {
   width: 85%;
   padding: 1vw;
 }
+
+section div {
+  margin-bottom: 4vh;
+}
+
 img {
   width: 24%;
 }
@@ -90,6 +95,7 @@ img {
   align-items: center;
   gap: 4vw;
   margin-bottom: 6vh;
+  margin-top: 3vh;
 }
 
 #gallery img:nth-child(2) {
