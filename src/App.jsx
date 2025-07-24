@@ -82,8 +82,9 @@ function Home() {
         <h2>My Little Companions 🦎</h2>
         <p>Here are some pictures of my reptiles:</p>
         <div id="gallery">
-          <img src="/crest_2.jpeg" alt="Crested Gecko" />
-          <img src="/crest_1.jpeg" alt="Second Gecko" />
+          <img src="/samczy.jpeg" alt="Crested Gecko" />
+          <img src="/smoczyca.jpeg" alt="Second Gecko" />
+          <img src="/sisi.jpeg" alt="Bearded Dragon" />
           <img src="/agamuski.jpeg" alt="Bearded Dragon" />
         </div>
       </div>
