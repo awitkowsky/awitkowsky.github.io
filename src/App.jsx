@@ -1,9 +1,18 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Reptiles from "./pages/Reptiles";
+
 export default function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Body />
-    </>
+      <main>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reptiles" element={<Reptiles />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
@@ -15,33 +24,23 @@ function Header() {
     </header>
   );
 }
-function Body() {
-  return (
-    <main>
-      <Nav />
-      <Main />
-    </main>
-  );
-}
+
 function Nav() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="#">Index</a>
+          <Link to="/">Index</Link>
         </li>
         <li>
-          <a href="#">Reptiles</a>
-        </li>
-        <li>
-          <a href="#">Demo</a>
+          <Link to="/reptiles">Reptiles</Link>
         </li>
       </ul>
     </nav>
   );
 }
 
-function Main() {
+function Home() {
   return (
     <section>
       <div>
@@ -63,30 +62,25 @@ function Main() {
         <p>
           Since I was a child, I’ve been interested in technology and the animal
           world. I enjoy gaming and sports, but reptiles have truly stolen my
-          heart. They’re fascinating, have unique personalities, and every day
-          with them is something new.
+          heart.
         </p>
         <p>
           I have <strong>three crested geckos</strong> – each with different
-          colors and temperaments. One is very active, another is a typical
-          “night owl,” and the third likes to sit in one place, staring at me
-          like I’m from another planet.
+          colors and temperaments.
         </p>
         <p>
           I also have a <strong>bearded dragon</strong> who is incredibly gentle
-          and friendly. She loves basking under the UV lamp and watching what’s
-          happening in the room.
+          and friendly.
         </p>
         <p>
-          I dream of creating larger terrariums with natural decorations one day
-          and sharing my knowledge about reptile care with other enthusiasts.
+          I dream of creating larger terrariums and sharing my knowledge with
+          others.
         </p>
       </div>
 
       <div>
         <h2>My Little Companions 🦎</h2>
         <p>Here are some pictures of my reptiles:</p>
-
         <div id="gallery">
           <img src="/crest_2.jpeg" alt="Crested Gecko" />
           <img src="/crest_1.jpeg" alt="Second Gecko" />
@@ -95,7 +89,7 @@ function Main() {
       </div>
 
       <p id="link">
-        <a href="species.html">(see them here)</a>
+        <Link to="/reptiles">(see them here)</Link>
       </p>
     </section>
   );

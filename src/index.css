@@ -98,10 +98,6 @@ img {
   margin-top: 3vh;
 }
 
-#gallery img:nth-child(2) {
-  scale: 1.1;
-}
-
 #link {
   font-style: italic;
   text-align: center;
