@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Reptiles from "./pages/Reptiles";
+import React, { lazy, Suspense } from "react";
+const Reptiles = lazy(() => import("./pages/Reptiles"));
 
 export default function App() {
   return (
@@ -9,7 +10,20 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reptiles" element={<Reptiles />} />
+          <Route
+            path="/reptiles"
+            element={
+              <Suspense
+                fallback={
+                  <section style={{ textAlign: "center" }}>
+                    Loading reptiles...
+                  </section>
+                }
+              >
+                <Reptiles />
+              </Suspense>
+            }
+          />
         </Routes>
       </main>
     </Router>
