@@ -9,7 +9,6 @@ const buttons = [
   { label: "Contact", icon: <Mail size={22} />, section: "contact" },
 ];
 
-// Definiujesz warianty dla kontenera
 const containerVariants = {
   hidden: { opacity: 0, y: 10 },
   visible: {
@@ -22,7 +21,6 @@ const containerVariants = {
   },
 };
 
-// I warianty dla pojedynczego przycisku
 const buttonVariants = {
   hidden: { opacity: 0, y: 10 },
   visible: { opacity: 1, y: 0 },

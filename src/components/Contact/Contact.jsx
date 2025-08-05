@@ -4,7 +4,6 @@ function Contact() {
   return (
     <main className="h-screen w-screen flex items-center justify-center px-6">
       <div className="flex w-4/5 gap-0 h-110 rounded-2xl">
-        {/* Lewa strona */}
         <div className="w-1/2 flex flex-col justify-center items-start border-r-2 border-amber-400 text-left pr-20">
           <h1 className="text-5xl font-bold text-white mb-6">Let’s Connect</h1>
           <p className="text-lg text-[#dbcaba] mb-8">
@@ -68,7 +67,6 @@ function Contact() {
           </div>
         </div>
 
-        {/* Prawa strona */}
         <div className="w-1/2 flex items-center justify-center">
           <form className="w-4/5 space-y-4 text-white">
             <input

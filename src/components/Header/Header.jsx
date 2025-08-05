@@ -25,7 +25,7 @@ function Header() {
   }, []);
 
   const handleScrollTo = (id) => (e) => {
-    e.preventDefault(); // blokuj domyślny jump
+    e.preventDefault();
     const target = document.getElementById(id);
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });

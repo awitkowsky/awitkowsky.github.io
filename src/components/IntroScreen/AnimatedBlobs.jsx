@@ -73,7 +73,6 @@ const blobs = [
       duration: 15,
     },
   },
-  // Pomniejsze bloby:
   {
     bg: "#a67bc5",
     opacity: 0.1,
@@ -103,7 +102,7 @@ const blobs = [
     },
   },
 ];
-
+// animacja przy której porzebowałem pomocy
 const AnimatedBlobs = () => {
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
   const [trail, setTrail] = useState([]);
@@ -119,7 +118,6 @@ const AnimatedBlobs = () => {
 
   return (
     <>
-      {/* Twoje animowane blobsy */}
       <div className="fixed inset-0 -z-10 pointer-events-none">
         {blobs.map(({ bg, opacity, size, blur, position, animation }, i) => (
           <motion.div
@@ -149,7 +147,6 @@ const AnimatedBlobs = () => {
         ))}
       </div>
 
-      {/* Trail pod kursorem — delikatne pulsujące kółka */}
       {trail.map((pos, i) => (
         <motion.div
           key={i}
@@ -171,7 +168,6 @@ const AnimatedBlobs = () => {
         />
       ))}
 
-      {/* Spotlight pod kursorem */}
       <div
         style={{
           position: "fixed",

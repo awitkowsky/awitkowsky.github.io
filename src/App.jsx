@@ -28,7 +28,7 @@ function App() {
           section.scrollIntoView({ behavior: "smooth" });
         }
         setPendingScrollTo(null);
-      }, 1100); // odczekaj aż DOM się zrenderuje
+      }, 1100);
 
       return () => clearTimeout(timeout);
     }
