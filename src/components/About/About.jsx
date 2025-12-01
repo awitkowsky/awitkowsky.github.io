@@ -20,7 +20,7 @@ function About() {
               href="https://en.wikipedia.org/wiki/Poland#Cuisine"
               className="cursor-default"
             >
-              "Kocham Piwo"
+              „Responsywność? Tak, reaguję płaczem. Ale przynajmniej jestem consistent, w przeciwieństwie do mojego UI.”
             </a>
           </div>
         </div>
